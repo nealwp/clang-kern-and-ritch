@@ -1,6 +1,6 @@
-#define EOF 0
+#include <stdio.h>
 
-main() 
+int main() 
 {
     int c, nl;
 

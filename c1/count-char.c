@@ -1,5 +1,6 @@
-#define EOF 0
-main() 
+#include <stdio.h>
+
+int main() 
 {
     long nc;
 
