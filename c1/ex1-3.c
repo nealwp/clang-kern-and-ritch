@@ -1,4 +1,6 @@
-main()
+#include <stdio.h>
+// print a heading above the temperature table
+int main()
 {
     int lower, upper, step;
     float fahr, celsius;

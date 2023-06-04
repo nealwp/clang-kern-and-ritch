@@ -1,4 +1,6 @@
-main()
+#include <stdio.h>
+// print conversion table in reverse order
+int main()
 {
     int lower, upper, step;
     float fahr, celsius;
