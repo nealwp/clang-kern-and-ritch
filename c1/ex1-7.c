@@ -5,9 +5,29 @@ int main()
 {
     long nc;
     int c;
+    int isSpace = 0;
 
     nc = 0;
     while ((c = getchar()) != EOF){
-        printf("%s", c);
+        
+        if(!isSpace && c == ' ') {
+            isSpace = 1;
+            printf("%c", c);
+            continue;
+        } 
+
+        if(isSpace && c != ' ') {
+            isSpace = 0;
+            printf("%c", c);
+            continue;
+        }
+        
+        if(isSpace && c == ' ') {
+            continue;
+        } 
+        
+        if(!isSpace && c != ' ') {
+            printf("%c", c);
+        }
     }
 }
