@@ -9,14 +9,15 @@ int main()
 
     inword = NO;
     while((c = getchar()) != EOF) {
-        if (c == '\n') {
-            printf("%c", c); 
-        }
         if (c == ' ' || c == '\n' || c == '\t') {
             inword = NO;
+            printf("%c", '\n');
         } else if (inword == NO) {
             inword = YES;
             printf("%c", c);
+        } else if (inword == YES) {
+            printf("%c", c);
         }
+        
     }
 }
